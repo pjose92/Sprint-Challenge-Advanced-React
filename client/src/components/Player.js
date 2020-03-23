@@ -27,7 +27,6 @@ const Player = ({ player }) => {
       <PlayerWrapper>
         <h1>{player.name}</h1>
         <h3>{player.country}</h3>
-        <p>{player.searches}</p>
       </PlayerWrapper>
     )
   }

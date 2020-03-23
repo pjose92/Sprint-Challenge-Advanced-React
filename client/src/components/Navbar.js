@@ -10,7 +10,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav>
+        <nav data-testid="nav-test-id" className='navbar' >
             <h1>Women's World Cup Players</h1>
             <div className="dark-mode_toggle">
                 <div

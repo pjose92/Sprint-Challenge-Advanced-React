@@ -22,5 +22,17 @@ test('Player', async () => {
   expect(players).toBeVisible()
 })
 
+test('Navbar title', async () => {
+  const wrapper = rtl.render(<App/>)
+  const women = wrapper.getByText(`Women's World Cup Players`)
+  
+  expect(women).toBeVisible()
+})
 
+it('Should have the class of navbar', async () => {
+  const wrapper = rtl.render(<Navbar />)
+  const element = wrapper.getByTestId("nav-test-id")
+
+  expect(element).toHaveClass('navbar')
+})
 

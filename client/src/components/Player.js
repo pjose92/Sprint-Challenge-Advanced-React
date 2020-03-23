@@ -1,26 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Player = ({ player }) => {
-    return (
-      <PlayerWrapper>
-        <h1>{player.name}</h1>
-        <h3>{player.country}</h3>
-        <p>{player.searches}</p>
-      </PlayerWrapper>
-    )
-  }
-  
-  export default Player
-  
-  const PlayerWrapper = styled.div`
-    width: 30%;
+const PlayerWrapper = styled.div`
+    width: 40%;
     margin: 1rem auto;
     text-align: center;
     padding: 1rem 2rem 1rem;
     border: .5px solid gray;
     border-radius: 8px;
-    opacity: .8;
     h1 {
       font-size: 2.5rem;
       padding: 1rem 0;
@@ -34,3 +21,17 @@ const Player = ({ player }) => {
       padding: 1rem 0;
     }
   `
+
+const Player = ({ player }) => {
+    return (
+      <PlayerWrapper>
+        <h1>{player.name}</h1>
+        <h3>{player.country}</h3>
+        <p>{player.searches}</p>
+      </PlayerWrapper>
+    )
+  }
+  
+  export default Player
+  
+  
